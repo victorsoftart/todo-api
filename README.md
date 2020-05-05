@@ -32,6 +32,24 @@ RockMongo installed at :
 http://127.0.0.1/mongo
 ```
 
+## API END POINT
+```sh
+- Get todo list
+GET: handle/todos
+
+- Add new todo
+POST: handle/todos/add
+
+- Update todo
+POST: handle/todos/update
+
+- Delete todo
+DELETE: handle/todos/delete/:id
+
+- Complete todo
+PUT: handle/todos/complete/:id
+```
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

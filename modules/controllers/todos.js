@@ -43,9 +43,9 @@ exports.addTodo = function(req, res) {
 /**
  * Update todo
  *
- * Endpoint: handle/todos/edit
+ * Endpoint: handle/todos/update
  * Method: POST
- * Request body: {title:"Todo", project:"project", done:false}
+ * Request body: {id:"5eb17085cbfa9b25887a1e38", title:"Todo", project:"project", done:false}
 **/
 exports.updateTodo = function(req, res) {
   console.log("req>>>", req.body);
@@ -78,7 +78,7 @@ exports.deleteTodo = function(req, res) {
  * Complete todo
  *
  * Endpoint: handle/todos/complete/:id
- * Method: patch
+ * Method: put
 **/
 exports.completeTodo = function(req, res) {
   console.log("req>>>", req.params);
