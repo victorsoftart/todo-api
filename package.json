@@ -11,13 +11,14 @@
     "moment": "^2.17.1",
     "mongodb": "^2.1.2",
     "mongoose": "^4.3.4",
-    "pm2": "^2.5.0",
+    "pm2": "^4.4.0",
     "q": "^1.5.0"
   },
   "devDependencies": {},
   "scripts": {
     "start": "pm2 start ./server.js --name todo-api",
     "stop": "pm2 stop ./server.js --name todo-api",
+    "restart": "pm2 restart todo-api",
     "logs": "pm2 logs todo-api",
     "monit": "pm2 monit"
   }
